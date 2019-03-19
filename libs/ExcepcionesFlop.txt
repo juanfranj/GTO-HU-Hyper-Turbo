@@ -1,0 +1,16 @@
+JcTsTd JsTdTc
+QcTsTd QsTdTc
+KcTsTd KsTdTc
+AcTsTd AsTdTc
+JdJcTs JsJdTc
+AcJsJd AsJdJc
+QdQcTs QsQdTc
+KcQsQd KsQdQc
+AcQsQd AsQdQc
+KdKcTs KsKdTc
+KdKcQs KsKdQc
+AcKsKd AsKdKc
+AdAcTs AsAdTs
+AdAcJs AsAdJc
+AdAcQs AsAdQc
+AdAcKs AsAdKc

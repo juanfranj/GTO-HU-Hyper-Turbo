@@ -1,0 +1,80 @@
+Software ayuda en juego. R&J Bomberos. Version 0.0
+Software ayuda en juego. R&J Bomberos. Version 0.0
+Software ayuda en juego. R&J Bomberos. Version 0.1
+	Se integran execpciones, en error al abrir archivos, y se
+	reduce el sleep.
+Software ayuda en juego. R&J Bomberos. Version 0.2
+	Se reducen fallos de escritura y lectura en input, incluyendo algun sleep.
+	Se intruduce el intercalado de posicion.
+-----------------------------------------Fallos--------------------------------
+Cambiar palos en los flopssingulares
+
+
+Hecho:
+	incluir buscar el flop antes de calcular, y dar error si no lo encuentra
+	dsp de hacer eso, resolver los errores.
+
+10bb 8bb 6bb or/3bai cambiar, no habia archivos y le puse uno de 13bb
+
+error en 3bnai en <13bb no existia, he pegado de 16bb comprobar
+
+-----------------------------------------General:------------------------------------------------
+	
+Crear las funciones para que detecte el numero de ciegas aproximado y las vaya introdu
+ciendo en la GUI. 
+
+	Postflop
+	Preflop
+
+	Hecho:	
+	Configurar boton clear con fin de mano.
+
+	Hecho:
+	Incluir un path para que busque el archivo en la carpeta donde se guarde la carpeta. Por defecto
+	queremos guardar la carpeta en c:\R&JF. Hecho, grabar el graficador en R&JF
+
+	Hecho	
+	Incluir el postflop en la app_grafica(En curso, haciendo la gui prueba)
+
+Crear checkbottom para jugar con otro preflop que no sea el GTO. 
+
+	- Juego contra fishes.
+	- Juego a lo CaIvina. Limp casi todo.
+
+-----------------------------------------Por hacer Preflop:-------------------------------------
+	Hecho:Creado archivo de cosulta postflop.
+	Tipo de bote preflop.:
+
+	Crear una variable tipoBote que guarde todas las acciones y cnd finalice la mano devuelva 
+	tipoBote[len(tipoBote)-2]
+	
+	Hecho
+	Indicar los tamaños de resubidas en botes RaisedPot=ISO y 3bNAI
+
+	ISO- 
+		>19bb Raise 3,5bb
+		>13bb Raise 3bb
+		>10bb Raise 2,7bb
+		>6bb  Raise 2,5bb
+		<6bb  Raise 2bb
+
+	3bnai
+		>19bb Raise 5bb
+		>13bb Raise 4,5bb
+
+	Hecho
+	Revisar juego preflop GTO, con la aplicacion creada. 	
+
+
+-----------------------------------------Por hacer PostFlop:------------------------------------
+
+	Hecho:
+	Configurar tamaños de apuestas por calle:
+ 
+	"Solo hace falta crear una variable que guarde las apuestas y despues reste la anterior.
+
+	Hecho:
+	creada postflop prueba funciona.
+	creada postflop prueba que ultiliza pexpect y va mas rapido.
+	se depura el codigo.
+
