@@ -43,7 +43,7 @@ def juegoPostflop():
 		if Hero==Turno:
 			if os.path.isfile("estrategia.txt"):
 				borrarArchivo("estrategia.txt")
-				sleep(0.2)
+				#sleep(0.2)
 			#print(nodo,accionAnterior)
 			print("Hero tiene que actuar")
 			archivoTurno("Turno Hero")
@@ -64,7 +64,7 @@ def juegoPostflop():
 		else:
 			if os.path.isfile("estrategia.txt"):
 				borrarArchivo("estrategia.txt")
-				sleep(0.1)
+				#sleep(0.1)
 			#print(nodo,accionAnterior)
 			print("Villano tiene que actuar")
 			archivoTurno("Turno Villano")

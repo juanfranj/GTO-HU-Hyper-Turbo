@@ -10,7 +10,7 @@ AcQsQd AsQdQc
 KdKcTs KsKdTc
 KdKcQs KsKdQc
 AcKsKd AsKdKc
-AdAcTs AsAdTs
+AdAcTs AsAdTc
 AdAcJs AsAdJc
 AdAcQs AsAdQc
 AdAcKs AsAdKc

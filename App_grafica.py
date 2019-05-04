@@ -667,7 +667,7 @@ Label(miFrame3, text="Numero de ciegas").grid(row=0,column=0,sticky="w",columnsp
 botonciegas=Button(miFrame3, text="Accion",command=_thread.start_new_thread(configurarCiegas,()))
 Numero_ciegas=Entry(miFrame3, textvariable=Ciegas)
 Numero_ciegas.grid(row=0,column=2,columnspan=3)
-#Ciegas.set("25")
+Ciegas.set("25")
 
 
 
@@ -692,7 +692,7 @@ Label(miFrame4, text="Posicion").grid(row=0,column=0,sticky="w",columnspan=2,pad
 cuadroPosicion=Entry(miFrame4, textvariable=Posicion_Hero)
 cuadroPosicion.grid(row=0,column=2,columnspan=1)
 Posicion_Hero.set("IP")
-
+Inicio_ciegas.set("25")
 Label(miFrame4, text="Inicio Ciegas").grid(row=2,column=0,sticky="w",columnspan=2,pady=10)
 InicioCiegas=Entry(miFrame4, textvariable=Inicio_ciegas)
 InicioCiegas.grid(row=2,column=2,columnspan=1)
