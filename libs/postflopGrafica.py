@@ -31,15 +31,10 @@ def juegoPostflop():
 	esperarPiosolver("arbol.txt")
 	borrarArchivo("arbol_.txt")
 	borrarArchivo("arbol.txt")
-	crearArchivoAccion()
-	#crearTipoBote()
-	
+	crearArchivoAccion()		
 #----------------------------------Juego postflop------------------------------------------------
 	while Mano_finalizada==False:
-		
 		Turno,nodo=cargarJuego(nodo,child,nombreCarta)
-		
-
 		if Hero==Turno:
 			if os.path.isfile("estrategia.txt"):
 				borrarArchivo("estrategia.txt")
@@ -53,19 +48,11 @@ def juegoPostflop():
 			borrarArchivo("codigo.txt")
 			vector_acciones=crearAcciones("estrategia.txt",nodo)
 			vector_estrategia=crearEstrategia(Preflop,"estrategia.txt",vector_acciones)
-			#print(vector_acciones,vector_estrategia)
 			bet,accion,accionAnterior,nodo=juegoHero(vector_acciones,vector_estrategia,accionAnterior,bet,nombre,nodo)
-			#print("Apuesta: ",bet)
-			archivoAccion(accion)
-			#esperarInput("C:/R&JF/libs/input.txt")
-			#print(bet,accion,accionAnterior, nodo)
-
-					
+			archivoAccion(accion)		
 		else:
 			if os.path.isfile("estrategia.txt"):
 				borrarArchivo("estrategia.txt")
-				#sleep(0.1)
-			#print(nodo,accionAnterior)
 			print("Villano tiene que actuar")
 			archivoTurno("Turno Villano")
 			crearCodigo(nodo)
@@ -74,16 +61,11 @@ def juegoPostflop():
 			borrarArchivo("codigo.txt")
 			vector_acciones=crearAcciones("estrategia.txt",nodo)
 			bet,accion,accionAnterior,nodo=juegoVillano(vector_acciones,accionAnterior,bet,nombre,nodo)
-			#print("Apuesta: ",bet)
 			archivoAccion(accion)
-			#esperarInput("C:/R&JF/libs/input.txt")
-			#print(bet,accion,accionAnterior, nodo)
-
 
 		Mano_finalizada,bote_final=finalMano(nodo,child,accion)
 	
 	crearInputFinalPostflop()
-	#esperarInputPostFlop("C:/R&JF/libs/input.txt")
 	archivoTurno("El ganador es:")
 	crearGanador(nombre)
 	crearArchivoAccion()
@@ -92,10 +74,3 @@ def juegoPostflop():
 	archivoTurno("Mano Finalizada")
 	llamarPiosolver("exit.txt",child)
 
-
-#print("final Mano")			
-#crearInputFinalPostflop()
-	
-		
-
-#print(juegoPostflop())
