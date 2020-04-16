@@ -2,6 +2,6 @@
 * Autor:
     * Juanfran Jimenez
 
-##Instalación:
-	* Copiar la carpeta en el directorio raiz c:\
+#Instalación:
+	* Copiar la carpeta en el directorio raiz c:
 	* Renombrarla como R&JF
