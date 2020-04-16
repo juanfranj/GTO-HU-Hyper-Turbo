@@ -1,7 +1,7 @@
-#Aplicacion GTO HU hypers.
+# Aplicacion GTO HU hypers.
 * Autor:
     * Juanfran Jimenez
 
-Instalación:
+## Instalación:
 	* Copiar la carpeta en el directorio raiz c:
 	* Renombrarla como R&JF
